@@ -57,19 +57,33 @@ let users = [
 //     console.log(newArr)
 // })
 
-
-// numArr = [1,2,3,4,5,6]
-// newArr = [ ]
+// let arr = [1,2,3,4,5,6]
 
 // Array.prototype.mySome = function(cb){
 //     for(let i= 0; i<this.length;i++){
-//         if(numArr[i] == true){
-//            cb(newArr.push(true)) 
+//         if(cb(this[i], i, i++)){
+//             return true
 //         }
 //     }
+//     return false
+// };
+
+//     let some =arr.mySome((value) => {
+//         return value % 2 ===0
+//     })
+// console.log(some)
+
+
+// let arr = [1,2,3,4,5,6];
+// Array.prototype.myEvery = function(cb){
+//     for(let i=0; i<this.length; i++){
+//         if(!cb(this[i],i,this)){
+//             return false
+//         }
+//     }
+//     return true
 // }
-
-// numArr.mySome(()=>{
-//     console.log(newArr)
+// let every = arr.myEvery((value)=>{
+//     return value % 2===0
 // })
-
+// console.log(every)
